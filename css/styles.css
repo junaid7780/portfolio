@@ -1,0 +1,194 @@
+body,html {
+  font-family: "Montserrat";
+  /* text-align: center; */
+  background-color: black;
+}
+
+             /* Big-headings */
+h1, h2, h3, h4 {
+  color:indigo;
+  text-align: center;
+  font-family: "Montserrat-bold";
+  font-size: 2.5rem;
+}
+p{
+  text-align: center;
+  font-family: "Montserrat-lighter";
+  font-size: 3rem;
+  color: white;
+}
+
+.my-self{
+  text-align:left;
+  padding: 0 7%;
+  font-family: "Montserrat-lighter";
+  font-size: 2.5rem;
+  color: white;
+}
+
+.image{
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin-left: 30%;
+  border-radius: 10%;
+}
+@media(max-width:1028px) {
+  #image {
+    text-align: center;
+  }
+
+  .image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+.photo {
+  margin-left:40%;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+ 
+}
+
+   /* logo */
+.container-fluid {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ color: white;
+ font-size: 1.5rem;
+ padding: 50px 0;
+}
+.right{
+  color: #8f8f8f;
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 1rem;
+  
+}
+
+.fa-facebook:hover {
+  color: darkslateblue;
+}
+
+.fa-instagram:hover {
+  color: #f09433;
+  color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.fa-whatsapp:hover {
+  color: #25D366;
+}
+
+                         /*colord-section*/
+.colord-section{
+  padding-bottom: 7%;
+  background-color: #ff4c68;
+
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Montserrat-lighter;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+                           /* about section*/
+.about-section{
+    padding-top: 20px;
+    text-align: center;
+   
+}
+
+                          /*skilled-section*/
+.skills-section{
+  color: white;
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  font: 1em sans-serif;
+
+}
+.progress{
+  width: 100vh;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+                          /*qulifacation-section*/
+.qulifacation-section{
+  padding: 10% 0;
+
+
+}
+                             /*contact-section*/
+.contact-section{
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  background-color: lightslategray;
+  padding: 50px 50px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 40%;
+  height: 10vh;
+}
+textarea{
+  height: 50vh;
+  width: 40%;
+}
+     
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #14042b);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #14042b);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #14042b);
+  background-image: -o-linear-gradient(top, #3cb0fd, #14042b);
+  background-image: linear-gradient(to bottom, #3cb0fd, #14042b);
+  text-decoration: none;
+}
+     /* gallery used js  */
+#gallery {
+  background-color: darkgrey;
+  position: relative;
+  display: flex;
+  padding-bottom: 10%;
+  justify-content: center;
+  overflow: hidden;
+  height: 700px;
+}
+.fun {
+  width: 80%;
+  height: 100%;
+  object-fit:fill;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}

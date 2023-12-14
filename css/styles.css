@@ -43,9 +43,6 @@ p {
   height: 200px;
   width: 200px;
   border-radius: 100%;
-  
-  align-items: center;
-  justify-content: center;
   align-items: center;
 }
 
@@ -95,8 +92,12 @@ p {
   color: white;
   font-family: Montserrat-lighter;
 }
+.navbar{
+  background-color: #ff4c68;
+}
 
 .nav-item {
+ 
   padding: 0 18px;
 }
 
@@ -191,7 +192,7 @@ textarea {
   background-image: linear-gradient(to bottom, #3cb0fd, #14042b);
   text-decoration: none;
 }
-/* Media queries for better mobile responsiveness */
+
 @media screen and (max-width: 768px) {
   .image {
     width: 100%; 

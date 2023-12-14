@@ -1,71 +1,69 @@
-body,html {
+body {
   font-family: "Montserrat";
-  /* text-align: center; */
   background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-             /* Big-headings */
+/* Big-headings */
 h1, h2, h3, h4 {
-  color:indigo;
+  color: rgb(68, 16, 107);
   text-align: center;
   font-family: "Montserrat-bold";
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-p{
+
+p {
   text-align: center;
   font-family: "Montserrat-lighter";
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: white;
 }
 
-.my-self{
-  text-align:left;
+.my-self {
+  text-align:justify;
   padding: 0 7%;
   font-family: "Montserrat-lighter";
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
   color: white;
 }
 
-.image{
+.image {
   display: flex;
   height: 500px;
   width: 500px;
-  margin-left: 30%;
+  margin-left: 55%;
+  justify-content: center;
   border-radius: 10%;
 }
-@media(max-width:1028px) {
-  #image {
-    text-align: center;
-  }
 
-  .image {
-    position: static;
-    transform: rotate(0);
-  }
-}
 .photo {
-  margin-left:40%;
   height: 200px;
   width: 200px;
   border-radius: 100%;
- 
+  
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-   /* logo */
-.container-fluid {
- display: flex;
- justify-content: center;
- gap: 20px;
- color: white;
- font-size: 1.5rem;
- padding: 50px 0;
+/* logo */
+#fluid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 50px 0;
 }
-.right{
+
+.right {
   color: #8f8f8f;
   font-family: "Montserrat";
   font-weight: 100;
   font-size: 1rem;
-  
 }
 
 .fa-facebook:hover {
@@ -84,11 +82,12 @@ p{
   color: #25D366;
 }
 
-                         /*colord-section*/
-.colord-section{
-  padding-bottom: 7%;
+/* colord-section */
+.colord-section {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 5%;
   background-color: #ff4c68;
-
 }
 
 .nav-link {
@@ -96,58 +95,75 @@ p{
   color: white;
   font-family: Montserrat-lighter;
 }
+
 .nav-item {
   padding: 0 18px;
 }
 
-                           /* about section*/
-.about-section{
-    padding-top: 20px;
-    text-align: center;
-   
+/* about section */
+.about-section {
+  padding-top: 20px;
+  text-align: center;
+  max-width: 100%;
 }
 
-                          /*skilled-section*/
-.skills-section{
+/* skilled-section */
+.skills-section {
   color: white;
   display: flex;
   padding-bottom: 10px;
-  justify-content: center;
   font: 1em sans-serif;
-
 }
-.progress{
+
+
+.progress {
   width: 100vh;
-  margin: 10px auto;
+  margin: 10px 0;
   display: flex;
-  justify-content: center;
- 
+ justify-content: center;
 }
 
-                          /*qulifacation-section*/
-.qulifacation-section{
+/* qulifacation-section */
+.qulifacation-section {
   padding: 10% 0;
-
-
 }
-                             /*contact-section*/
-.contact-section{
+
+/* contact-section */
+.contact-section {
   text-align: center;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background-color: lightslategray;
-  padding: 50px 50px;
+  padding: 50px 20px; 
 }
 
 input[type="text"],
-input[type="email"] {
-  width: 40%;
-  height: 10vh;
+input[type="email"],
+textarea {
+  width: 100%; 
+  height: 50px; 
+  margin-bottom: 20px; 
 }
-textarea{
-  height: 50vh;
-  width: 40%;
+
+/* gallery used js */
+#gallery {
+  background-color: darkgrey;
+  position: relative;
+  display: flex;
+  padding-bottom: 10%;
+  justify-content: center;
+  overflow: hidden;
+  height: 700px;
 }
+
+.fun {
+  width: 100%; 
+  height: 100%;
+  object-fit:fill;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
      
 .btn {
   background: #3498db;
@@ -175,20 +191,33 @@ textarea{
   background-image: linear-gradient(to bottom, #3cb0fd, #14042b);
   text-decoration: none;
 }
-     /* gallery used js  */
-#gallery {
-  background-color: darkgrey;
-  position: relative;
-  display: flex;
-  padding-bottom: 10%;
-  justify-content: center;
-  overflow: hidden;
-  height: 700px;
-}
-.fun {
-  width: 80%;
-  height: 100%;
-  object-fit:fill;
-  position: absolute;
-  transition: opacity 1s ease-in-out;
+/* Media queries for better mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .image {
+    width: 100%; 
+    margin-left: 0;
+    align-items: center;
+
+  }
+
+  .photo {
+    margin-left: 0;
+  }
+
+  .container-fluid {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  
+  .contact-section textarea {
+    width: 100%; 
+  }
+  .progress{
+    width: 100%;
+  }
+  .my-self{
+    text-align: justify;
+    
+  }
 }

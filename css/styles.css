@@ -46,7 +46,7 @@ p {
   align-items: center;
 }
 
-/* logo */
+/* app logo */
 #fluid {
   display: flex;
   justify-content: center;
@@ -86,9 +86,9 @@ p {
   padding-bottom: 5%;
   background-color: #ff4c68;
 }
-
+  /* top section */
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   font-family: Montserrat-lighter;
 }
@@ -98,7 +98,7 @@ p {
 
 .nav-item {
  
-  padding: 0 18px;
+  padding: 0 10px;
 }
 
 /* about section */
@@ -125,8 +125,8 @@ p {
 }
 
 /* qulifacation-section */
-.qulifacation-section {
-  padding: 10% 0;
+.container9 {
+  padding: 4% 0;
 }
 
 /* contact-section */
@@ -151,10 +151,7 @@ textarea {
   background-color: darkgrey;
   position: relative;
   display: flex;
-  padding-bottom: 10%;
-  justify-content: center;
   overflow: hidden;
-  height: 700px;
 }
 
 .fun {
@@ -165,7 +162,7 @@ textarea {
   transition: opacity 1s ease-in-out;
 }
 
-     
+     /* bootstrap button */
 .btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -192,7 +189,7 @@ textarea {
   background-image: linear-gradient(to bottom, #3cb0fd, #14042b);
   text-decoration: none;
 }
-
+    /* adjusting the layout for mobile phones */
 @media screen and (max-width: 768px) {
   .image {
     width: 100%; 
@@ -220,5 +217,17 @@ textarea {
   .my-self{
     text-align: justify;
     
+  }
+  #gallery{
+    height: 50vh;
+  }
+  #gallery .fun{
+  height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #gallery {
+    height: 700px; 
   }
 }

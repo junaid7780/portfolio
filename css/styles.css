@@ -16,16 +16,15 @@ h1, h2, h3, h4 {
 
 p {
   text-align: center;
-  font-family: "Montserrat-lighter";
+  font-family: "Montserrat";
   font-size: 1.8rem;
   color: white;
 }
 
 .my-self {
   text-align:justify;
-  padding: 0 7%;
-  font-family: "Montserrat-lighter";
-  font-size: 1.7rem;
+  font-family:"Montserrat";
+  font-size: 2rem;
   line-height: 3rem;
   color: white;
 }
@@ -215,11 +214,13 @@ textarea {
     width: 100%;
   }
   .my-self{
-    text-align: justify;
+    text-align:center;
+    font-size: 1.3rem;
+    line-height: 1.73;
     
   }
   #gallery{
-    height: 30vh;
+    height: 50vh;
   }
   #gallery .fun{
   height: 100%;
